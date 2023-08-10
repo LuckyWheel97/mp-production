@@ -3,6 +3,7 @@
   --bg: #474545;
   --text: #f6e20a;
   --second-text: #ba9c23;
+  --second: #a29999cc;
 }
 
 * {
@@ -18,17 +19,17 @@ body {
   font-family: "Roboto slab", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  /* min-height: 1500px; */
+  min-height: 1500px;
 }
 
 /* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   padding: 1.4rem 7%;
-  background-color: rgba(15, 15, 15, 0.8);
-  border-bottom: 1px solid var(--primary);
+  background-color: #a29999cc;
+  border-bottom: 1px solid var(--second);
   position: fixed;
   top: 0;
   left: 0;
@@ -39,20 +40,26 @@ body {
   text-align: left;
 }
 
+.navbar .img {
+}
+
 .navbar .navbar-logo {
+  background-image: url(../img/logomp.png);
   font-size: 2rem;
   font-weight: 700;
   justify-content: left;
-  color: var(--primary);
+  text-align: left;
+  color: #fff;
 }
 
 .navbar .navbar-logo span {
-  color: #fff;
+  color: rgb(19, 19, 23);
   font-style: italic;
 }
 
 .navbar .navbar-nav a {
-  color: #fff;
+  color: rgb(19, 19, 23);
+  font-weight: 800;
   display: inline-block;
   font-size: 1.4rem;
   margin: 0 0.8rem;
